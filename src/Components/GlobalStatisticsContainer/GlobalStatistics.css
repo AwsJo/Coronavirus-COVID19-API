@@ -1,0 +1,60 @@
+.globalstatistic-container {
+  width: 100%;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  max-width: 1440px;
+  justify-self: center;
+  min-height: 50vh;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+}
+@media (max-width: 500px) {
+  .globalstatistic-container {
+    padding: 0.5rem;
+  }
+}
+.globalstatistic-container::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../assets/World.svg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.2;
+  z-index: -1;
+}
+.globalstatistic-container h2 {
+  color: #023047;
+}
+.error {
+  margin-top: 3rem;
+  color: red;
+}
+.card-contaier {
+  display: grid;
+  margin-top: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  max-width: 1200px;
+}
+.card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  background-color: #023047;
+  color: white;
+  border-radius: 0.25rem;
+  min-height: 150px;
+  align-items: center;
+  max-width: calc(100vw-30px);
+  justify-content: space-evenly;
+}
